@@ -156,7 +156,7 @@ export default function NihongomaxTalent() {
             skilled but also culturally aligned with Japanese work standards.
           </p>
 
-          <blockquote className="italic text-xl text-gray-700">
+          <blockquote className="text-xl text-gray-700">
             “人材だけではなく、信頼を提供します。”
           </blockquote>
 
