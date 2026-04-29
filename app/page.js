@@ -5,6 +5,9 @@ export const metadata = {
   title: "Hire Japanese Speaking IT Engineers | Nihongomax Talent",
   description:
     "We provide highly skilled IT engineers from India trained in Japanese language (JLPT) and culture. Hire job-ready developers for Japan.",
+  icons: {
+    icon: "/sakura.png",
+  },
   keywords: [
     "Japanese speaking developers",
     "Hire IT engineers Japan",
@@ -114,13 +117,13 @@ export default function NihongomaxTalent() {
           </div>
 
           {/* RIGHT IMAGE + VERTICAL TEXT */}
-          <div className="relative w-full h-[500px] md:h-[650px]">
-            {/* IMAGE */}
+          <div className="relative w-full h-[400px] md:h-[660px]">
             <Image
-              src={"/fujisan.png"}
-              alt="Students learning Japanese language in Delhi classroom"
-              className="rounded-xl mb-8 w-full h-auto"
+              src="/fujisan.png"
+              alt="Japanese IT engineers in Delhi"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-xl object-cover"
               priority
             />
 

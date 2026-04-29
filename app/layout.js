@@ -21,6 +21,9 @@ export const metadata = {
   title: "Hire Japanese Speaking IT Engineers | Nihongo Max Talent",
   description:
     "We provide highly skilled IT engineers from India trained in Japanese language (JLPT) and culture.",
+  icons: {
+    icon: "/sakura.png",
+  },
 };
 
 export default function RootLayout({ children }) {
