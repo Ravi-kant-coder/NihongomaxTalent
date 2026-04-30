@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export const metadata = {
   title: "Hire Japanese Speaking IT Engineers | Nihongomax Talent",
@@ -61,37 +63,7 @@ export default function NihongomaxTalent() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {/* HEADER */}
-      <header className="w-full ">
-        <div className="max-w-8xl mx-auto px-6 md:px-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/logo.png"
-              alt="Nihongomax Talent Logo"
-              width={180}
-              height={60}
-              priority
-            />
-          </Link>
-
-          {/* NAV (optional for now) */}
-          <nav className="hidden md:flex gap-20 text-xl font-medium tracking-wide text-gray-800">
-            <Link href="#" className="hover:text-green-600 transition">
-              Home
-            </Link>
-            <Link href="#" className="hover:text-green-600 transition">
-              Services
-            </Link>
-            <Link href="#" className="hover:text-green-600 transition">
-              Talent
-            </Link>
-            <Link href="#" className="hover:text-green-600 transition">
-              Contact Us
-            </Link>
-          </nav>
-        </div>
-      </header>
-      {/* HERO SECTION */}
+      <Header />
       <section className="w-full flex items-center justify-center">
         <div className="grid md:grid-cols-2 gap-10 items-center max-w-7xl w-full">
           {/* LEFT CONTENT */}
@@ -119,8 +91,8 @@ export default function NihongomaxTalent() {
           {/* RIGHT IMAGE + VERTICAL TEXT */}
           <div className="relative w-full h-[400px] md:h-[660px]">
             <Image
-              src="/fujisan.png"
-              alt="Japanese IT engineers in Delhi"
+              src="/artForm.png"
+              alt="IT engineers From India trained in Japanese language and culture"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="rounded-xl object-cover"
@@ -156,15 +128,16 @@ export default function NihongomaxTalent() {
 
           <p className="text-gray-600 text-lg">
             We specialize in providing IT engineers who are not only technically
-            skilled but also culturally aligned with Japanese work standards.
+            skilled but also culturally aligned with Japanese work standards and
+            Japanese Language.
           </p>
 
           <blockquote className="text-xl text-gray-700">
-            “人材だけではなく、信頼を提供します。”
+            人材だけではなく、信頼を提供します。
           </blockquote>
 
           <p className="text-gray-500">
-            (We don’t just provide talent — we deliver trust.)
+            We don’t just provide talent — we deliver trust.
           </p>
         </div>
       </section>
@@ -196,20 +169,97 @@ export default function NihongomaxTalent() {
           </div>
         </div>
       </section>
-
-      {/*FOOTER */}
-      <section className="py-20 bg-gray-900 text-white text-center px-6 md:px-16">
+      <section className="py-20 bg-gray-200 text-center px-6 md:px-16">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Hire Skilled Engineers?
         </h2>
-        <p className="mb-8 text-gray-300">
+        <p className="mb-8 text-gray-700">
           Connect with us and get access to pre-screened Japanese-speaking
           developers.
         </p>
-        <button className="bg-red-600 px-8 py-3 rounded-lg hover:bg-red-700 transition cursor-pointer">
+        <button className="bg-red-600 px-8 py-3 rounded-lg hover:bg-red-700 transition cursor-pointer text-white font-bold">
           Get Candidates
         </button>
       </section>
+      <section className="py-20 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+          {/* ENGLISH */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">
+              For Japanese Companies
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              We understand the challenges of hiring skilled engineers in Japan.
+              Our candidates are trained in Japanese language (JLPT), business
+              etiquette, and modern tech stacks like MERN, ensuring smooth
+              communication and productivity.
+            </p>
+          </div>
+
+          {/* JAPANESE */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">日本企業向け</h3>
+            <p className="text-gray-600 leading-relaxed jp">
+              日本でのエンジニア採用の課題を理解しています。
+              当社の人材は、日本語能力（JLPT）とビジネスマナー、
+              そして最新のITスキルを備えており、スムーズな業務遂行を実現します。
+            </p>
+          </div>
+        </div>
+        <section className="py-20 px-6 md:px-16">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+            {/* ENGLISH */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">
+                For Japanese Companies
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We understand the challenges of hiring skilled engineers in
+                Japan. Our candidates are trained in Japanese language (JLPT),
+                business etiquette, and modern tech stacks like MERN, ensuring
+                smooth communication and productivity.
+              </p>
+            </div>
+
+            {/* JAPANESE */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">日本企業向け</h3>
+              <p className="text-gray-600 leading-relaxed jp">
+                日本でのエンジニア採用の課題を理解しています。
+                当社の人材は、日本語能力（JLPT）とビジネスマナー、
+                そして最新のITスキルを備えており、スムーズな業務遂行を実現します。
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="py-20 px-6 md:px-16">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+            {/* ENGLISH */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">
+                For Japanese Companies
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                We understand the challenges of hiring skilled engineers in
+                Japan. Our candidates are trained in Japanese language (JLPT),
+                business etiquette, and modern tech stacks like MERN, ensuring
+                smooth communication and productivity.
+              </p>
+            </div>
+
+            {/* JAPANESE */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">日本企業向け</h3>
+              <p className="text-gray-600 leading-relaxed jp">
+                日本でのエンジニア採用の課題を理解しています。
+                当社の人材は、日本語能力（JLPT）とビジネスマナー、
+                そして最新のITスキルを備えており、スムーズな業務遂行を実現します。
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <Footer />
     </main>
   );
 }
