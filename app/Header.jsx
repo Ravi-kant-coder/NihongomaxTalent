@@ -11,12 +11,12 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "Talent", href: "/talent" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact us", href: "/contact" },
   ];
 
   return (
-    <header className="w-full bg-gray-100 shadow-md">
-      <div className="max-w-8xl mx-auto px-6 md:px-16 flex items-center justify-between">
+    <header className="w-full bg-gray-100 shadow-md flex flex-col md:flex-row mx-auto px-4 md:px-16 py-3 items-center justify-between">
+      <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.png"
@@ -26,25 +26,29 @@ const Header = () => {
             priority
           />
         </Link>
-        <nav className="hidden md:flex gap-14 text-[17px] font-medium tracking-wide items-baseline">
-          {navLinks.map((link) => {
-            const isActive = pathname === link.href;
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`transition ${
-                  isActive
-                    ? "text-red-600 font-semibold border border-red-600 px-4 py-2 rounded-lg"
-                    : "text-gray-700 hover:text-red-600"
-                }`}
-              >
-                {link.name}
-              </Link>
-            );
-          })}
-        </nav>
       </div>
+      <nav className="flex flex-wrap md:gap-20 gap-4 text-[14px] md:text-lg font-medium">
+        {navLinks.map((link) => {
+          const isActive =
+            link.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(link.href);
+
+          return (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`px-3 py-1.5 rounded-md transition text-center ${
+                isActive
+                  ? "text-red-600 border border-red-600 font-semibold"
+                  : "text-gray-700 hover:text-red-600"
+              }`}
+            >
+              {link.name}
+            </Link>
+          );
+        })}
+      </nav>
     </header>
   );
 };

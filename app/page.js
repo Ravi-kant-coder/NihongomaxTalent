@@ -77,7 +77,7 @@ export default function NihongomaxTalent() {
 
             <div className="flex gap-4">
               <Link
-                href="/profiles"
+                href="/talent"
                 className="bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-900 cursor-pointer font-bold"
               >
                 Request Talent Profiles
@@ -181,7 +181,7 @@ export default function NihongomaxTalent() {
           developers.
         </p>
         <Link
-          href="/profiles"
+          href="/talent"
           className="bg-red-600 px-8 py-3 rounded-lg hover:bg-red-700 transition cursor-pointer text-white font-bold"
         >
           Get Candidates
@@ -192,78 +192,39 @@ export default function NihongomaxTalent() {
           {/* ENGLISH */}
           <div>
             <h3 className="text-xl font-semibold mb-4">
-              For Japanese Companies
+              Our Expertise in Japanese-Ready Talent
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              We understand the challenges of hiring skilled engineers in Japan.
-              Our candidates are trained in Japanese language (JLPT), business
-              etiquette, and modern tech stacks like MERN, ensuring smooth
-              communication and productivity.
+              At Nihongo Max Talent, we specialize in connecting Japanese
+              companies with highly skilled IT professionals from India who are
+              not only technically proficient but also culturally and
+              linguistically prepared to work in Japanese business environments.
+              Our candidates undergo structured training in modern technologies
+              such as full-stack development, alongside focused preparation in
+              Japanese language (JLPT) and workplace communication. This ensures
+              smooth collaboration, reduced onboarding time, and long-term
+              productivity. We understand that hiring for the Japanese market
+              requires more than just technical ability—it requires reliability,
+              discipline, and an understanding of professional etiquette. With
+              over a decade of experience in Japanese language education and
+              cultural training, we have developed a unique system that prepares
+              candidates to meet these expectations.
             </p>
           </div>
 
           {/* JAPANESE */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">日本企業向け</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              日本企業向けの専門知識
+            </h3>
             <p className="text-gray-600 leading-relaxed jp">
-              日本でのエンジニア採用の課題を理解しています。
-              当社の人材は、日本語能力（JLPT）とビジネスマナー、
-              そして最新のITスキルを備えており、スムーズな業務遂行を実現します。
+              Nihongo Max
+              Talentでは、日本企業とインドの優秀なIT人材をつなぐサービスを提供しています。当社のエンジニアは、高い技術力を持つだけでなく、日本語能力（JLPT）やビジネス文化への理解も備えており、日本企業の環境で円滑に業務を行うことができます。最新のITスキルに加え、日本語や職場でのコミュニケーション能力を体系的にトレーニングすることで、スムーズな連携と高い生産性を実現します。
+              日本での採用においては、技術力だけでなく、責任感や規律、そしてビジネスマナーが重要です。当社は10年以上にわたる日本語教育と文化指導の経験を活かし、日本企業の期待に応えられる人材育成システムを構築しています。すべての候補者は、厳格な選考とトレーニングを経てご紹介いたします。
+              リモート採用から現地採用まで、企業様のニーズに応じた柔軟な採用ソリューションをご提供します。
             </p>
           </div>
         </div>
-        <section className="py-20 px-6 md:px-16">
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
-            {/* ENGLISH */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4">
-                For Japanese Companies
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                We understand the challenges of hiring skilled engineers in
-                Japan. Our candidates are trained in Japanese language (JLPT),
-                business etiquette, and modern tech stacks like MERN, ensuring
-                smooth communication and productivity.
-              </p>
-            </div>
-
-            {/* JAPANESE */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4">日本企業向け</h3>
-              <p className="text-gray-600 leading-relaxed jp">
-                日本でのエンジニア採用の課題を理解しています。
-                当社の人材は、日本語能力（JLPT）とビジネスマナー、
-                そして最新のITスキルを備えており、スムーズな業務遂行を実現します。
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className="py-20 px-6 md:px-16">
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
-            {/* ENGLISH */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4">
-                For Japanese Companies
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                We understand the challenges of hiring skilled engineers in
-                Japan. Our candidates are trained in Japanese language (JLPT),
-                business etiquette, and modern tech stacks like MERN, ensuring
-                smooth communication and productivity.
-              </p>
-            </div>
-
-            {/* JAPANESE */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4">日本企業向け</h3>
-              <p className="text-gray-600 leading-relaxed jp">
-                日本でのエンジニア採用の課題を理解しています。
-                当社の人材は、日本語能力（JLPT）とビジネスマナー、
-                そして最新のITスキルを備えており、スムーズな業務遂行を実現します。
-              </p>
-            </div>
-          </div>
-        </section>
       </section>
     </main>
   );

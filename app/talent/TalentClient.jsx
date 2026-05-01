@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function TalentClient() {
   return (
@@ -46,12 +47,18 @@ export default function TalentClient() {
           </p>
 
           <div className="flex gap-4">
-            <button className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700">
+            <Link
+              className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700"
+              href="/contact"
+            >
               Hire Candidate
-            </button>
-            <button className="border px-6 py-2 rounded-lg hover:bg-gray-100">
-              Contact
-            </button>
+            </Link>
+            <Link
+              className="border px-6 py-2 rounded-lg hover:bg-gray-100"
+              href="/contact"
+            >
+              Contact Us
+            </Link>
           </div>
         </motion.div>
       </section>
@@ -101,7 +108,6 @@ export default function TalentClient() {
         </motion.div>
       </section>
 
-      {/* PROJECTS */}
       <section className="max-w-6xl mx-auto mt-20">
         <h2 className="text-2xl font-semibold mb-6">Projects / プロジェクト</h2>
 
@@ -121,7 +127,6 @@ export default function TalentClient() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="max-w-6xl mx-auto mt-20 text-center">
         <h2 className="text-2xl font-semibold mb-4">
           Interested in this candidate?
@@ -130,9 +135,12 @@ export default function TalentClient() {
           Contact us to hire or schedule an interview.
         </p>
 
-        <button className="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700">
+        <Link
+          className="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700"
+          href="/contact"
+        >
           Request Interview
-        </button>
+        </Link>
       </section>
     </main>
   );

@@ -1,61 +1,63 @@
 const Footer = () => {
   return (
     <>
-      <section className="py-20 bg-gray-900 text-white text-center flex justify-between items-baseline px-50 ">
-        <div className="flex flex-col items-baseline">
-          <h2 className="text-xl font-semibold mb-6">Nihongomax Talent</h2>
-          <div className="flex flex-col items-baseline gap-4">
-            <button className=" cursor-pointer">Home</button>
+      <footer className="bg-gray-900 text-white">
+        {/* MAIN GRID */}
+        <div className="max-w-7xl mx-auto px-6 md:px-16 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          {/* COLUMN 1 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-5">Nihongomax Talent</h2>
+            <ul className="space-y-3 text-gray-300 text-sm">
+              <li className="hover:text-white cursor-pointer">Home</li>
+              <li className="hover:text-white cursor-pointer">About Us</li>
+              <li className="hover:text-white cursor-pointer">Contact Us</li>
+              <li className="hover:text-white cursor-pointer">FAQs</li>
+              <li className="hover:text-white cursor-pointer">Blogs</li>
+            </ul>
+          </div>
 
-            <button className=" cursor-pointer">About Us</button>
+          {/* COLUMN 2 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-5">For Employers</h2>
+            <ul className="space-y-3 text-gray-300 text-sm">
+              <li className="hover:text-white cursor-pointer">Register</li>
+              <li className="hover:text-white cursor-pointer">Prices</li>
+              <li className="hover:text-white cursor-pointer">User Guide</li>
+              <li className="hover:text-white cursor-pointer jp">採用教育費</li>
+            </ul>
+          </div>
 
-            <button className=" cursor-pointer">Contact Us</button>
+          {/* COLUMN 3 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-5">Legals</h2>
+            <ul className="space-y-3 text-gray-300 text-sm">
+              <li className="hover:text-white cursor-pointer">Terms of Use</li>
+              <li className="hover:text-white cursor-pointer">
+                Privacy Policy
+              </li>
+            </ul>
+          </div>
 
-            <button className=" cursor-pointer">FAQs</button>
-
-            <button className=" cursor-pointer">Blogs</button>
+          {/* COLUMN 4 */}
+          <div>
+            <h2 className="text-lg font-semibold mb-5">Contact Us</h2>
+            <ul className="space-y-3 text-gray-300 text-sm">
+              <li>1-7-20 Global Hiring Dept.</li>
+              <li>Tokyo, Japan</li>
+              <li className="hover:text-white cursor-pointer">
+                info@nihongomaxtalent.com
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="flex flex-col items-baseline">
-          <h2 className="text-xl font-semibold mb-6">For Employers</h2>
-          <div className="flex flex-col items-baseline gap-4">
-            <button className=" cursor-pointer">Register</button>
 
-            <button className=" cursor-pointer">Prices</button>
-
-            <button className=" cursor-pointer">User Guide</button>
-            <button className=" cursor-pointer">採用教育費</button>
-          </div>
+        {/* BOTTOM BAR */}
+        <div className="border-t border-gray-700 text-center py-6 px-4">
+          <p className="text-gray-400 text-sm">
+            © 2026 Nihongomax Talent Pvt. Ltd. All rights reserved.
+          </p>
         </div>
-        <div className="flex flex-col items-baseline">
-          <h2 className="text-xl font-semibold mb-6">Legals</h2>
-          <div className="flex flex-col items-baseline gap-4">
-            <button className=" cursor-pointer">Terms of use</button>
-
-            <button className=" cursor-pointer">Privacy Policy</button>
-          </div>
-        </div>
-        <div className="flex flex-col items-baseline">
-          <h2 className="text-xl font-semibold mb-6">Contact Us</h2>
-          <div className="flex flex-col items-baseline gap-4">
-            <button className="cursor-pointer">
-              1-7-20 Global Hiring Dept.
-            </button>
-
-            <button className="cursor-pointer">Tokyo, Japan</button>
-
-            <button className=" cursor-pointer">
-              info@nihongomaxtalent.com
-            </button>
-          </div>
-        </div>
-      </section>
-      <div className="flex items-center justify-center pb-10 bg-gray-900">
-        <p className="text-gray-300">
-          Copyright @ 2026 Owned and Operated by Nihongomax Talent Pvt. Ltd. All
-          rights reserved.
-        </p>
-      </div>
+      </footer>
     </>
   );
 };
