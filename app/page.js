@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "./Header";
-import Footer from "./Footer";
 
 export const metadata = {
   title: "Hire Japanese Speaking IT Engineers | Nihongomax Talent",
@@ -63,7 +61,6 @@ export default function NihongomaxTalent() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Header />
       <section className="w-full flex items-center justify-center">
         <div className="grid md:grid-cols-2 gap-10 items-center max-w-7xl w-full">
           {/* LEFT CONTENT */}
@@ -79,12 +76,18 @@ export default function NihongomaxTalent() {
             </p>
 
             <div className="flex gap-4">
-              <button className="bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-900 cursor-pointer font-bold">
+              <Link
+                href="/profiles"
+                className="bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-900 cursor-pointer font-bold"
+              >
                 Request Talent Profiles
-              </button>
-              <button className="border border-gray-400 px-6 py-3 rounded-lg hover:bg-gray-300 cursor-pointer ">
+              </Link>
+              <Link
+                href="/contact"
+                className="border border-gray-400 px-6 py-3 rounded-lg hover:bg-gray-300 cursor-pointer "
+              >
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -177,9 +180,12 @@ export default function NihongomaxTalent() {
           Connect with us and get access to pre-screened Japanese-speaking
           developers.
         </p>
-        <button className="bg-red-600 px-8 py-3 rounded-lg hover:bg-red-700 transition cursor-pointer text-white font-bold">
+        <Link
+          href="/profiles"
+          className="bg-red-600 px-8 py-3 rounded-lg hover:bg-red-700 transition cursor-pointer text-white font-bold"
+        >
           Get Candidates
-        </button>
+        </Link>
       </section>
       <section className="py-20 px-6 md:px-16">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
@@ -259,7 +265,6 @@ export default function NihongomaxTalent() {
           </div>
         </section>
       </section>
-      <Footer />
     </main>
   );
 }

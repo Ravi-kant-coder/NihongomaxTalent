@@ -1,5 +1,7 @@
 import { Source_Sans_3, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
@@ -28,7 +30,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${sourceSans.variable} ${notoJP.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
