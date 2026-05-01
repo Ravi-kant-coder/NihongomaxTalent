@@ -55,6 +55,7 @@ export default function NihongomaxTalent() {
       "https://www.instagram.com/nihongomax",
     ],
   };
+
   return (
     <main className="bg-white text-gray-800">
       <script
@@ -103,12 +104,12 @@ export default function NihongomaxTalent() {
             />
 
             {/* VERTICAL JAPANESE TEXT */}
-            <div className="absolute left-4 top-10 text-black">
+            <div className="absolute -left-4 top-10 text-black">
               <p
                 className="text-2xl md:text-3xl font-semibold tracking-widest jp"
                 style={{
                   writingMode: "vertical-rl",
-                  textOrientation: "mixed",
+                  textOrientation: "upright",
                 }}
               >
                 最高の人材で
@@ -172,6 +173,7 @@ export default function NihongomaxTalent() {
           </div>
         </div>
       </section>
+
       <section className="py-20 bg-gray-200 text-center px-6 md:px-16">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Ready to Hire Skilled Engineers?
@@ -187,15 +189,231 @@ export default function NihongomaxTalent() {
           Get Candidates
         </Link>
       </section>
-      <section className="py-20 px-6 md:px-16">
+
+      <section className="px-6 md:px-16">
+        <h1 className="text-4xl text-center font-semibold pt-10">
+          Data & AI Engineers Ready for Japan
+        </h1>
+        <h2 className="text-2xl text-center font-semibold py-8">
+          日本で活躍できるデータ・AIエンジニア
+        </h2>
+
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-30">
+          <div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Core IT Roles</h3>
+              <ul className="mb-8 space-y-2">
+                <li className="flex justify-between">
+                  <span>Full Stack Developer</span>
+                  <span className="jp text-gray-600">
+                    フルスタックエンジニア
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Frontend Developer</span>
+                  <span className="jp text-gray-600">
+                    フロントエンドエンジニア
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Backend Developer</span>
+                  <span className="jp text-gray-600">
+                    バックエンドエンジニア
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Software Engineer</span>
+                  <span className="jp text-gray-600">
+                    ソフトウェアエンジニア
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Web Developer</span>
+                  <span className="jp text-gray-600">Webエンジニア</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Cloud & DevOps</h3>
+              <ul className="mb-8 space-y-2">
+                <li className="flex justify-between">
+                  <span>DevOps Engineer</span>
+                  <span className="jp text-gray-600">DevOpsエンジニア</span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Cloud Engineer</span>
+                  <span className="jp text-gray-600">クラウドエンジニア</span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>AWS Engineer</span>
+                  <span className="jp text-gray-600">AWSエンジニア</span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Site Reliability Engineer (SRE)</span>
+                  <span className="jp text-gray-600">SREエンジニア</span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Infrastructure Engineer</span>
+                  <span className="jp text-gray-600">インフラエンジニア</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Data & AI</h3>
+              <ul className="mb-8 space-y-2">
+                <li className="flex justify-between">
+                  <span>AI Engineer</span>
+                  <span className="jp text-gray-600">AIエンジニア</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Data Scientist</span>
+                  <span className="jp text-gray-600">
+                    データサイエンティスト
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Machine Learning Engineer</span>
+                  <span className="jp text-gray-600">機械学習エンジニア</span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Big Data Engineer</span>
+                  <span className="jp text-gray-600">
+                    ビッグデータエンジニア
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Database Administrator</span>
+                  <span className="jp text-gray-600">データベース管理者</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Security</h3>
+              <ul className="mb-8 space-y-2">
+                <li className="flex justify-between">
+                  <span>Cybersecurity Engineer</span>
+                  <span className="jp text-gray-600">
+                    セキュリティエンジニア
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Network Security Engineer</span>
+                  <span className="jp text-gray-600">
+                    ネットワークエンジニア
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Mobile & UI</h3>
+              <ul className="mb-8 space-y-2">
+                <li className="flex justify-between">
+                  <span>Mobile App Developer</span>
+                  <span className="jp text-gray-600">モバイルアプリ開発者</span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Android Developer</span>
+                  <span className="jp text-gray-600">アンドロイド開発者</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>iOS Developer</span>
+                  <span className="jp text-gray-600">iOS開発者</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>UI/UX Designer</span>
+                  <span className="jp text-gray-600">UI/UXデザイナー</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Emerging Tech</h3>
+              <ul className="mb-8 space-y-2">
+                <li className="flex justify-between">
+                  <span>IoT Engineer</span>
+                  <span className="jp text-gray-600">IoTエンジニア</span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>Blockchain Developer</span>
+                  <span className="jp text-gray-600">
+                    ブロックチェーン開発者
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <span>AR/VR Developer</span>
+                  <span className="jp text-gray-600">AR/VR開発者</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Systems & Hardware</h3>
+              <ul className="mb-8 space-y-2">
+                <li className="flex justify-between">
+                  <span>Embedded Systems Engineer</span>
+                  <span className="jp text-gray-600">
+                    組み込みシステムエンジニア
+                  </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>System Administrator</span>
+                  <span className="jp text-gray-600">システム管理者</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Network Engineer</span>
+                  <span className="jp text-gray-600">
+                    ネットワークエンジニア
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="relative w-full h-[200px] md:h-[400px] overflow-hidden">
+            <Image
+              src="/groovy.png"
+              alt="IT engineers from India trained in Japanese language and culture"
+              className="object-cover"
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="relative w-full h-[200px] md:h-[400px] overflow-hidden">
+            <Image
+              src="/zombieing.png"
+              alt="IT engineers from India trained in Japanese language and culture"
+              className="object-cover"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+      </section>
+      <section className="px-6 md:px-16 pt-10 mt-10">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
           {/* ENGLISH */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">
+            <h3 className="text-xl font-semibold">
               Our Expertise in Japanese-Ready Talent
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              At Nihongo Max Talent, we specialize in connecting Japanese
+              At Nihongomax Talent, we specialize in connecting Japanese
               companies with highly skilled IT professionals from India who are
               not only technically proficient but also culturally and
               linguistically prepared to work in Japanese business environments.
@@ -203,26 +421,37 @@ export default function NihongomaxTalent() {
               such as full-stack development, alongside focused preparation in
               Japanese language (JLPT) and workplace communication. This ensures
               smooth collaboration, reduced onboarding time, and long-term
-              productivity. We understand that hiring for the Japanese market
-              requires more than just technical ability—it requires reliability,
-              discipline, and an understanding of professional etiquette. With
-              over a decade of experience in Japanese language education and
-              cultural training, we have developed a unique system that prepares
-              candidates to meet these expectations.
+              productivity.
             </p>
           </div>
 
-          {/* JAPANESE */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">
-              日本企業向けの専門知識
-            </h3>
+            <h3 className="text-xl font-semibold">日本企業向けの専門知識</h3>
             <p className="text-gray-600 leading-relaxed jp">
-              Nihongo Max
-              Talentでは、日本企業とインドの優秀なIT人材をつなぐサービスを提供しています。当社のエンジニアは、高い技術力を持つだけでなく、日本語能力（JLPT）やビジネス文化への理解も備えており、日本企業の環境で円滑に業務を行うことができます。最新のITスキルに加え、日本語や職場でのコミュニケーション能力を体系的にトレーニングすることで、スムーズな連携と高い生産性を実現します。
-              日本での採用においては、技術力だけでなく、責任感や規律、そしてビジネスマナーが重要です。当社は10年以上にわたる日本語教育と文化指導の経験を活かし、日本企業の期待に応えられる人材育成システムを構築しています。すべての候補者は、厳格な選考とトレーニングを経てご紹介いたします。
-              リモート採用から現地採用まで、企業様のニーズに応じた柔軟な採用ソリューションをご提供します。
+              Nihongomax
+              Talentでは、日本企業とインドの優秀なIT人材をつなぐサービスを提供しています。当社のエンジニアは、
+              高い技術力を持つだけでなく、日本語能力（JLPT）やビジネス文化への理解も備えており、
+              日本企業の環境で円滑に業務を行うことができます。最新のITスキルに加え、
+              日本語や職場でのコミュニケーション能力を体系的にトレーニングすることで、スムーズな連携と高い生産性を実現します。
             </p>
+          </div>
+          <div className="relative w-full h-[200px] md:h-[400px] overflow-hidden">
+            <Image
+              src="/meditating.png"
+              alt="IT engineers from India trained in Japanese language and culture"
+              className="object-cover"
+              width={400}
+              height={400}
+            />
+          </div>
+          <div className="relative w-full h-[200px] md:h-[400px] overflow-hidden">
+            <Image
+              src="/coffee.gif"
+              alt="IT engineers from India trained in Japanese language and culture"
+              className="object-cover"
+              width={400}
+              height={400}
+            />
           </div>
         </div>
       </section>
