@@ -198,7 +198,7 @@ export default function NihongomaxTalent() {
           日本で活躍できるデータ・AIエンジニア
         </h2>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-30">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-2 md:gap-30">
           <div>
             <div>
               <h3 className="text-xl font-semibold mb-4">Core IT Roles</h3>
@@ -380,6 +380,11 @@ export default function NihongomaxTalent() {
                   <span className="jp text-gray-600">
                     ネットワークエンジニア
                   </span>
+                </li>
+
+                <li className="flex justify-between">
+                  <span>SAP Engineer</span>
+                  <span className="jp text-gray-600">SAPエンジニア</span>
                 </li>
               </ul>
             </div>
