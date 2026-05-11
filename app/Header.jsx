@@ -1,5 +1,5 @@
 "use client";
-
+import Dropdown from "./components/Dropdown";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -21,8 +21,8 @@ const Header = () => {
           <Image
             src="/logo.png"
             alt="Nihongo Max Talent Logo"
-            width={120}
-            height={40}
+            width={180}
+            height={60}
             priority
           />
         </Link>
@@ -48,6 +48,7 @@ const Header = () => {
             </Link>
           );
         })}
+        <Dropdown />
       </nav>
     </header>
   );
